@@ -21,7 +21,7 @@ export PATH=$HOME/bin:/usr/local/bin:/snap/bin:/opt/bin:$PATH
 ### ---- PLUGINS & THEMES -----------------------------------
 source $ZSH/themes/spaceship-prompt/spaceship.zsh-theme
 source $ZSH/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-source "/root/.zsh/spaceship-vi-mode/spaceship-vi-mode.plugin.zsh"
+source $ZSH/spaceship-vi-mode/spaceship-vi-mode/spaceship-vi-mode.plugin.zsh
 source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 fpath=($ZSH/plugins/zsh-completions/src $fpath)
 
@@ -49,4 +49,9 @@ spaceship_vi_mode_enable
 alias la="ls -a"
 alias ll="ls -l"
 alias gc="git clone"
+alias gcm="git commit"
+alias ..="cd .."
+alias e="nano"
+alias gp="git push"
+alias gs="git status"
 
